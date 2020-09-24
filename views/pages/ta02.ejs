@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <% include ../includes/header.ejs %>
-</head>
+  <head>
+    <% include ../includes/header.ejs %>
+  </head>
 
-<body>
-  <% include ../includes/nav.ejs %>
-<div class="jumbotron text-center">
-  <div class="container">
-    <h1><%= title %></h1>
-    <p>This is the placeholder for Team Activity 02</p>
-  </div>
-</div>
-<div class="container">
-  
-</div>
+  <body>
+    <% include ../includes/nav.ejs %>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1><%= title %></h1>
+        <p>This is the placeholder for Team Activity 02</p>
 
+        <form action="/ta02/addUser" method="POST">
+          Enter name
+          <input type="text" name="input1" style="color: black" />
+          <br />
+          <br />
+          <button style="background-color: black" type="submit">Submit</button>
+        </form>
+        <br />
+        <br />
+        <div>
+          <form action="/ta02/removeUser" method="POST">
+            Remove existing name
+            <input type="text" name="remUser" style="color: black" />
+            <br />
+            <br />
+            <button type="submit" style="background-color: black">
+              Remove User
+            </button>
+          </form>
+        </div>
+        <br />
+        <label><strong>Data parsed from input: </strong></label>
+        <br />
+        <% for (var i = 0; i <= name.length; i++ ) { %>
+        <br />
+        <%= name[i] %> <% } %>
+      </div>
+    </div>
 
-</body>
+    <div class="container"></div>
+  </body>
 </html>
