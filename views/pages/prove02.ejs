@@ -1,0 +1,26 @@
+<%- include('../includes/headProve02.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/booksProve02.css">
+</head>
+
+<body>
+    <%- include('../includes/navigationProve02.ejs') %>
+
+    <main>
+        <% if (prods.length > 0) { %>
+            <div class="grid">
+                <% for (let book of prods) { %>
+                    <article class="card book-item">
+                        <header class="card__header">
+                            <h1 class="book__title" style="color: #ffeb3b;">Title: </h1> <h1 class="book__title" style="color: #ffff;"><%= book.title %></h1>
+                        </header>
+                        <div class="card__content">
+                            <p class="book__description" style="color: #ffeb3b;">Summray: </p><p class="book__description" style="color: #ffffff;"><%= book.summary %></p>
+                        </div>
+                    </article>
+                <% } %>
+            </div>
+        <% } else { %>
+            <h1>No books Found!</h1>
+        <% } %>
+    </main>
+<%- include('../includes/endProve02.ejs') %>

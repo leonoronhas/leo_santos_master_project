@@ -1,0 +1,24 @@
+<%- include('../includes/headProve02.ejs') %>
+    <link rel="stylesheet" href="/css/formsProve02.css">
+    <link rel="stylesheet" href="/css/booksProve02.css">
+</head>
+
+<body>
+   <%- include('../includes/navigationProve02.ejs') %>
+
+    <main>
+        <form class="book-form" action="/prove02Input/add-book" method="POST">
+            <div class="form-control">
+                <label for="title">Title</label>
+                <br/>
+                <input type="text" name="title" id="title" placeholder="Enter book title">
+                <br/>
+                <label for="title">Summary</label>
+                <br/>
+                <textarea type="text" name="summary" id="summary" rows="4" cols="50" placeholder="Enter book summary"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Add to list</button>
+        </form>
+    </main>
+<%- include('../includes/endProve02.ejs') %>
