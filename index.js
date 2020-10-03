@@ -14,9 +14,9 @@ const ta03Routes = require("./routes/ta03");
 const ta04Routes = require("./routes/ta04");
 
 // Route setup for weekly prove assignments
-const prove01Routes = require("./routes/prove01");
-const prove02Data = require("./routes/prove02Input");
-const prove02 = require('./routes/prove02');
+const prove01Routes = require("./routes/prove01/prove01");
+const prove02Data = require("./routes/prove02/prove02Input");
+const prove02 = require('./routes/prove02/prove02');
 
 app
   .use(express.static(path.join(__dirname, "public")))
