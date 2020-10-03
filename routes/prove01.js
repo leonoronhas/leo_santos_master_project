@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/',(req, res) => {
-    res.render('pages/prove01', { 
+    res.render('pages/prove01/prove01', { 
     });
 });
 
 router.post('/submit',(req, res) => {
-    res.render('pages/prove01display', { 
+    res.render('pages/prove01/prove01display', { 
         input1: req.body.input1,
         input2: req.body.input2
     });

@@ -6,7 +6,7 @@ const books = [];
 
 // get book
 router.get("/add-book", (req, res, next) => {
-  res.render("pages/prove02Input", {
+  res.render("pages/prove02/prove02Input", {
     pageTitle: "Add Book",
     path: "/prove02Input/add-book",
     formsCSS: true,

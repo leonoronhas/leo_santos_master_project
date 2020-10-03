@@ -6,10 +6,10 @@ const prove02InputData = require("./prove02Input");
 
 router.get('/', (req, res, next) => {
     const books = prove02InputData.books;
-    res.render('pages/prove02', {
+    res.render('pages/prove02/prove02', {
       prods: books,
       pageTitle: 'Prove 02',
-      path: '/prove02',
+      path: '/prove02/prove02',
       hasBooks: books.length > 0,
       activeBook: true,
       bookCSS: true
