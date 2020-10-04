@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "name": "Sennheiser Momentum True Wireless 2",
+    "price": 299,
+    "description": "Bluetooth in-Ear Buds with Active Noise Cancellation, Smart Pause, Customizable Touch Control and 28-Hour Battery Life - Black (M3IETW2 Black)",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81FaX2%2Bwu2L._AC_SL1500_.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Samsung Galaxy Buds Plus",
+    "price": 130,
+    "description": "perfect fitting earbuds to isolate you from distracting noises, so you can stay focused on what you want. And if you’d like to filter in some of the outside world to be more in-tune with your surroundings, you can switch on Ambient Aware2.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/411c-7qzI4L._AC_.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sony WH-1000XM3",
+    "price": 348,
+    "description": "Noise Cancelling Headphones WH1000XM3: Wireless Bluetooth Over the Ear Headset with Mic for phone-call and Alexa Voice Control - Industry Leading Active Noise Cancellation",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/51IdLe-%2B6kL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Apple Airpods Pro",
+    "price": 249,
+    "description": "Incredibly light noise-cancelling headphones, AirPods Pro block out your environment so you can focus on what you’re listening to. AirPods Pro use two microphones, an outward-facing microphone and an inward-facing microphone, to create superior noise cancellation.",
+    "imageUrl": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=1144&hei=1144&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1591634795000"
+  },
+  {
+    "id": 4,
+    "name": "Bose Noise Cancelling Headphones 700",
+    "price": 379,
+    "description": "Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done, or just shut out the world for a few moments and relax.",
+    "imageUrl": "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/headphones/noise_cancelling_headphones_700/product_silo_images/noise_cancelling_headphones_700_TrippleMidnightBlue_EC_hero_web.png/jcr:content/renditions/cq5dam.web.600.600.png"
+  }
+]

@@ -1,0 +1,42 @@
+<%- include('../../includes/project/headProject.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/booksProve02.css">
+</head>
+
+<body>
+    <%- include('../../includes/project/navProject.ejs') %>
+
+    <main>
+        <% if (prods.length > 0) { %>
+            <div class="grid">
+                <% for (let product of prods) { %>
+                    <article class="card book-item">
+                        <header class="card__header">
+                            <h1 class="book__title" style="color: black;"></h1> <h1 class="book__title" style="color: #000;"><%= product.name %></h1>
+                        </header>
+                        <div class="card__content">
+                            <p class="book__description" style="color: black;"></p><p class="book__description" style="color: #000;">$<%= product.price %></p>
+                        </div>
+                        <div class="card__content">
+                            <p class="book__description" style="color: black;"></p><p class="book__description" style="color: #000;"><%= product.description %></p>
+                        </div>
+                        <div class="card__image">
+                            <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: center;">
+                        <div class="card__actions">
+                            <form action="/add-to-cart" method="POST">
+                                <button class="btn">Add to Cart</button>
+                            </form>
+                        </div>
+                        <div class="card__actions">
+                             <a href="/project/product-detail/<%= product.id %>" class="btn">Details</a>
+                        </div>
+                    </div>
+                    </article>
+                <% } %>
+            </div>
+        <% } else { %>
+            <h1>No products found!</h1>
+        <% } %>
+    </main>
+<%- include('../../includes/project/endProject.ejs') %>

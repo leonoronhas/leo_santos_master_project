@@ -64,15 +64,16 @@ main {
 }
 
 .card {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px black;
   border-radius: 50px 20px;
-  background-color: black;
+  background-color: white;
+  margin-bottom: 40px;
 }
 
 .card__header,
 .card__content {
   padding: 1rem;
-  color: 'blue';
+  color: blue;
 }
 
 .card__header h1,
@@ -92,10 +93,20 @@ main {
   margin: 0 0.25rem;
 }
 
+.card__image {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.card__image img {
+  width: 70%;
+}
+
 .btn {
   font: inherit;
-  border: 1px solid #00695c;
-  color: #00695c;
+  border: 1px solid black;
+  color: black;
   background: white;
   border-radius: 3px;
   cursor: pointer;
@@ -103,6 +114,6 @@ main {
 
 .btn:hover,
 .btn:active {
-  background-color: #00695c;
+  background-color: grey;
   color: white;
 }

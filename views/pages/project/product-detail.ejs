@@ -1,0 +1,26 @@
+<%- include('../../includes/project/headProject.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/booksProve02.css">
+
+    </head>
+
+    <body>
+        <%- include('../../includes/project/navProject.ejs') %>
+        <main class="centered">
+            <article class="card book-item">
+                <header class="card__header">
+                    <h1 class="book__title" style="color: black;"></h1> <h1 class="book__title" style="color: #000;"><%= product.name %></h1>
+                </header>
+                <div class="card__content">
+                    <p class="book__description" style="color: black;"></p><p class="book__description" style="color: #000;">$<%= product.price %></p>
+                </div>
+                <div class="card__content">
+                    <p class="book__description" style="color: black;"></p><p class="book__description" style="color: #000;"><%= product.description %></p>
+                </div>
+                <div class="card__image">
+                    <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: center;">
+            </div>
+            </article>
+        </main>
+        <%- include('../../includes/project/endProject.ejs') %>

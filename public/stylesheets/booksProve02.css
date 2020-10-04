@@ -7,6 +7,7 @@
 .book-item {
   width: 20rem;
   max-width: 95%;
+  align-self: center;
 }
 
 .book__title {
