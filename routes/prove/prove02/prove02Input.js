@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const router = express.Router();
 
-const bookController = require("../../controllers/prove02/book");
+const bookController = require("../../../controllers/prove02/book");
 
 // /prove02/add-book -> GET
 router.get("/add-book", bookController.getBook);

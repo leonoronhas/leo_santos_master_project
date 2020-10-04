@@ -3,7 +3,7 @@ const books = [];
 exports.getBook = (req, res, next) => {
   res.render("pages/prove02/prove02Input", {
     pageTitle: "Add Book",
-    path: "/prove02Input/add-book",
+    path: "/prove/prove02Input/add-book",
     formsCSS: true,
     productCSS: true,
     activeAddProduct: true,
@@ -15,7 +15,7 @@ exports.addBook = (req, res, next) => {
     title: req.body.title,
     summary: req.body.summary,
   });
-  res.redirect("/prove02");
+  res.redirect("/prove/prove02");
 };
 
 exports.getBookData = (req, res, next) => {

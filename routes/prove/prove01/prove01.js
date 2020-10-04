@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const inputController = require("../../controllers/prove01/input");
+const inputController = require("../../../controllers/prove01/input");
 
 // Get Data from Inputs
 router.get("/", inputController.getInputData);
