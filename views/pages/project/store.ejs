@@ -24,17 +24,29 @@
                         </div>
                         <div style="display: flex; flex-direction: row; justify-content: center;">
                         <div class="card__actions">
-                            <form action="/add-to-cart" method="POST">
-                                <button class="btn">Add to Cart</button>
-                            </form>
-                        </div>
-                        <div class="card__actions">
                              <a href="/project/product-detail/<%= product.id %>" class="btn">Details</a>
                         </div>
                     </div>
                     </article>
                 <% } %>
             </div>
+            <section class="pagination">
+                <% if (currentPage !== 1 && previousPage !== 1) { %>
+                    <label>First Page</label>
+                    <a href="/project/store/?page=1">1</a> 
+                <% } %>
+                <% if (hasPreviousPage) { %>
+                    <a href="/project/store/?page=<%= previousPage %>"><%= previousPage %></a>
+                <% } %>
+                <a href="/project/store/?page=<%= currentPage %>" class="active"><%= currentPage %></a>
+                <% if (hasNextPage) { %>
+                    <a href="/project/store/?page=<%= nextPage %>"><%= nextPage %></a>
+                <% } %>
+                <% if (lastPage !== currentPage && nextPage !== lastPage) { %>
+                    <a href="/project/store/?page=<%= lastPage %>"><%= lastPage %></a>
+                    <label>Last Page</label>
+                <% } %>
+            </section>
         <% } else { %>
             <h1>No products found!</h1>
         <% } %>

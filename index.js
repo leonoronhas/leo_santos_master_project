@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const path = require("path");
 const cors = require('cors')
 require("dotenv/config");
-const PORT = process.env.PORT || 5000; // So we can run on heroku || (OR) localhost:5000
+const PORT = process.env.PORT || 3000; // So we can run on heroku || (OR) localhost:5000
 
 const routes = require("./routes");
 
@@ -16,14 +16,6 @@ const corsOptions = {
   origin: "https://leo-cse341.herokuapp.com/",
   optionsSuccessStatus: 200
 };
-
-// app
-//   .use(express.static(path.join(__dirname, "public")))
-//   .set("views", path.join(__dirname, "views"))
-//   .set("view engine", "ejs")
-//   .use(cors(corsOptions))
-//   .use("/", routes) // all my routes
-//   .listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 const options = {
   useUnifiedTopology: true,
@@ -52,4 +44,5 @@ mongoose
     console.log(err);
   });
 
+  
 
