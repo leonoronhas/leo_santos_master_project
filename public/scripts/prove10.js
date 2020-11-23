@@ -35,10 +35,8 @@ function addAvenger() {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
-      console.log(" Input is " + newAvengerInput);
       let p = document.createElement("p");
-      p.innerText = data.avengers[data.avengers.length - 1].newAvenger;
+      p.innerText = data.avengers[data.avengers.length - 1].name;
       populate.appendChild(p);
     })
     .catch(console.error);
