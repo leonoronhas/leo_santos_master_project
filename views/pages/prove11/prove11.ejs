@@ -1,0 +1,24 @@
+<%- include('../../includes/headProve02.ejs') %>
+    <link rel="stylesheet" href="/stylesheets/booksProve02.css">
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/scripts/prove11.js" defer>
+    </script>
+</head>
+
+<body>
+    <%- include('../../includes/navigationProve02.ejs') %>
+
+    <main>
+        <button id="getList" class="btn">Get List</button>
+            <div class="grid">
+                    <article id="card book-item" class="card book-item">
+                        <header id="card__header" class="card__header">
+                            <label>Avengers</label>
+                            <div id="populate"></div>
+                        </header>
+                    </article>
+                </div>
+                <input type="text" id="newAvenger" name="newAvenger"/>
+                <button id="newAvengerButton">Add Avenger</button>
+    </main>
+<%- include('../../includes/endProve02.ejs') %>

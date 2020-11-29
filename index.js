@@ -38,8 +38,21 @@ mongoose
     .set("views", path.join(__dirname, "views"))
     .set("view engine", "ejs")
     .use(cors(corsOptions))
-    .use("/", routes) // all my routes
-    .listen(PORT, () => console.log(`Listening on ${PORT}`));
+    .use("/", routes); // all my routes
+
+    const server = app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+    const io = require('socket.io')(server);
+    io.on('connection', socket => {
+        console.log('Client connected');
+        socket.on('new-avenger', data => {
+            if (data) {
+            socket.broadcast.emit('populate-list')
+            } else {
+            console.log('Looks like something went wrong');
+            }
+        })
+    });
+
   })
   .catch(err => {
     console.log(err);
